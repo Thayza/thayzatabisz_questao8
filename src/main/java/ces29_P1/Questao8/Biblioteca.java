@@ -96,5 +96,16 @@ public class Biblioteca{
 		usuario.setStatus(true);
 		usuario.setDias(dias);
 	}
-	
+
+	public String getStatusLivro(Livro livro) {
+		if(livro.getStatusLost()){
+			return "Extraviado";
+		}
+		else{
+			if(livro.getDisponibilidade())
+				return "Disponivel";
+			else
+				return "Emprestado";
+		}
+	}
 }

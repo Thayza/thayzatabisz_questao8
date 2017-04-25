@@ -5,6 +5,7 @@ public class Livro {
 	private String titulo, autor;
 	private int numCatalogo;
 	private boolean disponivel = true;
+	private boolean extraviado = false;
 	private String usuario;
 	
 	public Livro(String titulo, String autor, int id){
@@ -37,6 +38,10 @@ public class Livro {
 	
 	public boolean getDisponibilidade(){
 		return this.disponivel;
+	}
+	
+	public boolean getStatusLost(){
+		return this.extraviado;
 	}
 	
 }

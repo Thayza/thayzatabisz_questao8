@@ -2,7 +2,6 @@ package ces29_P1.Questao8;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class Sprint2Test {
